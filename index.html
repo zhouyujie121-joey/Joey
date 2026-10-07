@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yujie Zhou — From Persuasive Design to Cognitive Autonomy</title>
+<title>Yujie Zhou</title>
 <style>
   :root{
     --ink:#161616;
@@ -50,7 +50,7 @@
   .pill{border:1px solid var(--line);padding:7px 12px;border-radius:999px;font-size:13px;color:#4d4d4d;background:#faf9f6}
   section{padding:90px 0;border-bottom:1px solid var(--line)}
   .grid{display:grid;grid-template-columns:250px 1fr;gap:70px}
-  .section-label{font-size:13px;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--accent)}
+  .section-label{font-size:13px;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:#76574b}
   h2{
     font-family:Georgia, "Times New Roman", serif;
     font-size:42px;line-height:1.08;font-weight:500;letter-spacing:-.025em;margin:0 0 25px
@@ -88,12 +88,12 @@
   .prototype-copy .tag{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#d7a595;font-weight:700}
   .prototype-copy h3{font-family:Georgia,serif;font-size:34px;font-weight:500;line-height:1.1;margin:12px 0 18px}
   .quote{
-    margin:36px 0 0;padding:28px 30px;border-left:3px solid var(--accent);
+    margin:36px 0 0;padding:28px 30px;border-left:3px solid #76574b;
     background:var(--soft);font-family:Georgia,serif;font-size:23px;line-height:1.4
   }
   .timeline{margin-top:35px;border-top:1px solid var(--line)}
   .step{display:grid;grid-template-columns:120px 1fr;gap:30px;padding:25px 0;border-bottom:1px solid var(--line)}
-  .step b{font-size:14px;color:var(--accent)}
+  .step b{font-size:14px;color:#76574b}
   .closing{padding:100px 0 120px}
   .closing h2{font-size:54px;max-width:780px}
   .contact{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
@@ -118,16 +118,36 @@
     text-decoration:none;transition:.18s ease;
   }
   .experiment-nav:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
-  .experiment-cta{
-    display:inline-flex;align-items:center;gap:10px;margin-top:22px;
-    padding:13px 17px;border-radius:999px;background:#fff;color:#171717;
-    text-decoration:none;font-size:13px;font-weight:700;
-    border:1px solid rgba(255,255,255,.28);transition:.18s ease;
-  }
-  .experiment-cta:hover{transform:translateY(-1px);background:#f3f3ef}
-  .prototype-visual-link{
-    display:block;text-decoration:none;color:inherit;position:relative;
-  }
+.experiment-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+
+  margin-top:22px;
+  padding:14px 22px;
+
+  width:auto;
+  max-width:max-content;
+
+  border-radius:999px;
+  background:#fff;
+  color:#171717;
+
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  line-height:1;
+  white-space:nowrap;
+
+  border:1px solid rgba(255,255,255,.28);
+  transition:.18s ease;
+}
+
+.experiment-cta:hover{
+  transform:translateY(-1px);
+  background:#f3f3f0;
+}
   .prototype-visual-link::after{
     content:"Open experiment →";position:absolute;left:28px;bottom:28px;
     background:rgba(17,17,17,.86);color:#fff;padding:10px 13px;
@@ -141,16 +161,46 @@
     object-fit:cover;object-position:top center;border-radius:10px;
     box-shadow:0 24px 60px rgba(0,0,0,.28);background:#fff;
   }
+.brandText{
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:.03em;
+  color:#76574b;
+  margin:auto;
+}
+.closing-text{
+  max-width:760px;
+  font-size:16px;
+  line-height:1.7;
+  color:#666;
+  margin:24px 0 0;
+}
 
+.closing-highlight{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:24px;
+  line-height:1.35;
+  font-style:italic;
+  margin:28px 0 0;
+  color:#161616;
+}
+.closing{
+  min-height:auto;
+  padding:60px 0 45px;
+}
+
+footer{
+  padding:0px 0 32px;
+}
 </style>
 </head>
 <body>
 <nav>
   <div class="wrap">
-    <div class="brand">Yujie Zhou</div>
+    <div class="brand"><p class="brandText">Yujie Zhou's Research Portfolio</p> </div>
     <div class="links">
       <a href="#capabilities">Capabilities</a>
-      <a href="#evidence">Evidence</a>
+      <a href="#evidence">Sources</a>
       <a href="#motivation">Why this project</a>
       <a class="experiment-nav" href="nordicstays.html">NordicStays experiment ↗</a>
     </div>
@@ -252,7 +302,9 @@
       <div class="cards">
         <div class="card">
           <h3>Experimental design</h3>
-          <p>Timer present/absent × scarcity message present/absent; randomised assignment; controlled exposure.</p>
+          <p>1. Timer present/absent × scarcity message present/absent</p>
+          <p>2. Randomised assignment</p> 
+          <p>3. Controlled exposure</p>
           <p class="small">N = 69 valid participants after exclusions.</p>
         </div>
         <div class="card">
@@ -291,7 +343,7 @@
         that problem empirically through urgency cues, anxiety and perceived autonomy.
       </p>
       <p>
-        Human–AI Interaction brings the question into a new setting. When an AI system presents a
+        Human–AI Interaction brings the question into a borderland. When an AI system presents a
         recommendation, the interaction can become frictionless precisely at the point where a user
         might otherwise evaluate, question or verify information.
       </p>
@@ -354,10 +406,38 @@
 
 <div class="closing">
   <div class="wrap">
-    <div class="eyebrow">A research trajectory</div>
-    <h2>I want to keep asking the same question in a new technological setting: <em>how can interaction design protect, rather than quietly reduce, human agency?</em></h2>
+    <div class="eyebrow">What I want to build next</div>
+
+    <h2>
+      I want to move from studying how interaction design shapes human agency
+      into exploring <em>designing and evaluating interventions that help protect it.</em>
+    </h2>
+
+    <p class="closing-text">
+      For me, a useful research prototype should preserve enough of the target interaction
+      context for participants’ responses to remain meaningful, while remaining controlled
+      enough to isolate and evaluate the intervention. My MSc thesis taught me how to move
+      from a behavioural question, to an interactive prototype, to a controlled study.
+      I now want to extend that approach to Human–AI Interaction.
+    </p>
+
+    <p class="closing-highlight">
+      Credible enough to feel real. Controlled enough to test.
+    </p>
+
+    <p class="closing-text">
+      I'm especially interested in how stakeholder-informed ideas can be translated into
+      interactive interventions and then assessed through controlled, mixed-methods studies.
+    </p>
+
     <div class="contact">
-      <a class="button alt" href="https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Auu%3Adiva-597383" target="_blank">Read the MSc thesis</a>
+      <a
+        class="button alt"
+        href="https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Auu%3Adiva-597383"
+        target="_blank"
+      >
+        Read the MSc thesis
+      </a>
     </div>
   </div>
 </div>
